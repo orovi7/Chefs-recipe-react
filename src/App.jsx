@@ -1,5 +1,5 @@
 
-
+import { IoSearchSharp } from "react-icons/io5";
 import './App.css'
 
 function App() {
@@ -20,9 +20,9 @@ function App() {
       <ul><li><a>Search</a></li></ul>
       </div>
 {/* search bar & user part */}
-       <div>
-        
-        <input type="text" placeholder='Search' />
+       <div className="flex items-center gap-3 bg-[#150B2B0D] px-4 py-2 rounded-3xl">
+       <IoSearchSharp />
+        <input className="bg-transparent outline-none placeholder:text-black" type="text" placeholder='Search' />
       </div>
      </nav>
       
