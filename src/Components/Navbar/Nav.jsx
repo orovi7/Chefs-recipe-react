@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoSearchSharp } from "react-icons/io5";
+import { FaRegCircleUser } from "react-icons/fa6";
 
 const Nav = () => {
     return (
@@ -20,7 +21,9 @@ const Nav = () => {
        <div className="flex items-center gap-3 bg-[#150B2B0D] px-4 py-2 rounded-3xl">
        <IoSearchSharp />
         <input className="bg-transparent outline-none placeholder:text-black" type="text" placeholder='Search' />
+        <div className='text-[#0BE58A] text-xl'><FaRegCircleUser /></div>
       </div>
+     
      </nav>
         </div>
     );
