@@ -1,0 +1,35 @@
+import React from 'react';
+
+const Cook = ({cook}) => {
+    const {recipe_name, recipe_id, preparing_time, calories} = cook;
+    console.log(cook)
+    return (
+        <div className='bg-[#28282808] mb-3'>
+            
+            {/* <td>{recipe_name}</td>
+             <td>{preparing_time}</td>
+            <td>{calories}</td> */}
+            <div className='md:flex   pr-4  items-center'>
+                <div className='md:flex  items-center gap-4 pl-9 w-1/3 mr-5'>
+                    <p>{recipe_id}</p>
+                <p>{recipe_name}</p>
+                </div>
+                <div className='flex gap-10'>
+             <p>{preparing_time} min</p>
+                <p className='mr-5'>{calories}</p>
+          </div>
+          <button className='bg-[#0BE58A] rounded-3xl text-black font-semibold border-2 border-[#0BE58A] p-2 px-3'>Preparing</button>
+                </div>
+          
+            {/* <ol className='flex justify-between px-16 '>
+                <li>{recipe_name}</li>
+                <li>{preparing_time}</li>
+                <li>{calories}</li>
+            </ol> */}
+          
+           
+        </div>
+    );
+};
+
+export default Cook;
