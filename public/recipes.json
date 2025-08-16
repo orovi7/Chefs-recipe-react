@@ -1,0 +1,98 @@
+[
+  {
+    "recipe_image": "https://www.eatyourselfskinny.com/wp-content/uploads/2012/04/34.jpg",
+    "recipe_id": 1,
+    "recipe_name": "Spicy Basil Chicken",
+    "short_description": "A Thai-style stir-fried chicken with basil leaves and chili.",
+    "ingredients": [
+      "550 g chicken",
+      "120 ml soy sauce",
+      "200 g basil leaf",
+      "400 g mushroom",
+      "2 cloves garlic",
+      "3 red chilies"
+    ],
+    "preparing_time": 30,
+    "calories": "320 calories"
+  },
+  {
+    "recipe_image": "https://www.allrecipes.com/thmb/gTibTRJ8MW87L0jMhAvXPjIDD94=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/19402-quick-and-easy-alfredo-sauce-DDMFS-4x3-17abb2055c714807944172db9172b045.jpg",
+    "recipe_id": 2,
+    "recipe_name": "Creamy Alfredo Pasta",
+    "short_description": "Classic Italian pasta tossed in creamy Alfredo sauce.",
+    "ingredients": [
+      "300 g fettuccine pasta",
+      "250 ml heavy cream",
+      "100 g parmesan cheese",
+      "50 g butter",
+      "2 cloves garlic",
+      "Salt & pepper"
+    ],
+    "preparing_time": 25,
+    "calories": "450 calories"
+  },
+  {
+    "recipe_image": "https://jennifercooks.com/wp-content/uploads/2025/01/fresh-garden-salad-recipe-jennifercooks.com_1524-1.jpeg",
+    "recipe_id": 3,
+    "recipe_name": "Fresh Garden Salad",
+    "short_description": "A refreshing salad with seasonal vegetables and light dressing.",
+    "ingredients": [
+      "100 g lettuce",
+      "50 g cucumber",
+      "50 g cherry tomatoes",
+      "30 g carrots",
+      "20 ml olive oil",
+      "Lemon juice"
+    ],
+    "preparing_time": 15,
+    "calories": "120 calories"
+  },
+  {
+    "recipe_image": "https://maldivescook.com/wp-content/uploads/beef-curry.jpg",
+    "recipe_id": 4,
+    "recipe_name": "Beef Curry",
+    "short_description": "Slow-cooked beef in rich and spicy curry sauce.",
+    "ingredients": [
+      "600 g beef",
+      "150 g onion",
+      "100 g tomato",
+      "200 ml coconut milk",
+      "50 g curry paste",
+      "Coriander leaves"
+    ],
+    "preparing_time": 60,
+    "calories": "580 calories"
+  },
+  {
+    "recipe_image": "https://ichef.bbc.co.uk/ace/standard/1600/food/recipes/fluffyamericanpancak_74828_16x9.jpg.webp",
+    "recipe_id": 5,
+    "recipe_name": "Fluffy Pancakes",
+    "short_description": "Soft and fluffy pancakes served with maple syrup.",
+    "ingredients": [
+      "200 g all-purpose flour",
+      "250 ml milk",
+      "2 eggs",
+      "50 g sugar",
+      "1 tsp baking powder",
+      "Butter for frying"
+    ],
+    "preparing_time": 20,
+    "calories": "350 calories"
+  },
+  {
+    "recipe_image": "https://www.thespruceeats.com/thmb/HgM2h42z1HGEcSWkWk5CgAjDDpQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-grill-salmon-2216658-hero-01-a9c948f8a238400ebaafc0caf509c7fa.jpg",
+    "recipe_id": 6,
+    "recipe_name": "Grilled Salmon",
+    "short_description": "Tender salmon fillet grilled to perfection with lemon butter.",
+    "ingredients": [
+      "2 salmon fillets (150 g each)",
+      "30 g butter",
+      "2 cloves garlic",
+      "Lemon juice",
+      "Salt & pepper",
+      "Fresh dill"
+    ],
+    "preparing_time": 25,
+    "calories": "400 calories"
+  }
+]
