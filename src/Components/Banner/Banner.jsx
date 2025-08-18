@@ -5,7 +5,7 @@ import React from 'react';
 const Banner = () => {
     return (
         // <div style={{backgroundImage : `url(${bannerImage})`}}>
-        <div  className=' h-[500px] md:h-[600px] mb-10    bg-cover bg-center bg-no-repeat ' style={{backgroundImage : "url('/chef1.png')"}}>
+        <div  className=' h-[500px] md:h-[600px] mb-10 bg-cover bg-center bg-no-repeat ' style={{backgroundImage : "url('/chef1.png')"}}>
              
            <div className='text-center  items-center pt-36 flex-row justify-center'>
         
@@ -15,8 +15,8 @@ const Banner = () => {
          
            </div>
            <div className='flex justify-center gap-4 '>
-            <button className='bg-[#0BE58A]  text-black font-bold text-base p-4 px-6 rounded-full'>Explore Now</button>
-            <button className='bg-transparent text-white border-2 font-bold text-base p-4 px-6 rounded-full'>Our Feedback</button>
+            <button className='bg-[#0BE58A]  text-black font-bold text-base p-4  rounded-full'>Explore Now</button>
+            <button className='bg-transparent text-white border-2 font-bold text-base p-4  rounded-full'>Our Feedback</button>
            </div>
           
         </div>
