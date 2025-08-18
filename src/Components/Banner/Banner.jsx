@@ -9,14 +9,14 @@ const Banner = () => {
              
            <div className='text-center  items-center pt-36 flex-row justify-center'>
         
-             <h1 className='text-5xl font-bold text-white leading-tight'>Discover an exceptional cooking <br />  class tailored for you!</h1>
-          <p className='text-white pt-4 pb-5'>Learn and Master Basic Programming, Data Structures, Algorithm, OOP,
+             <h1 className='md:text-5xl text-2xl font-bold text-white leading-tight'>Discover an exceptional cooking <br />  class tailored for you!</h1>
+          <p className='text-white md:text-base text-sm pt-4 pb-5'>Learn and Master Basic Programming, Data Structures, Algorithm, OOP,
              Database and solve 500+ coding <br /> problems to become an exceptionally well world-class Programmer.</p>
          
            </div>
            <div className='flex justify-center gap-4 '>
-            <button className='bg-[#0BE58A]  text-black font-bold text-base p-4  rounded-full'>Explore Now</button>
-            <button className='bg-transparent text-white border-2 font-bold text-base p-4  rounded-full'>Our Feedback</button>
+            <button className='bg-[#0BE58A]  text-black font-bold text-base md:p-4 p-2  rounded-full '>Explore Now</button>
+            <button className='bg-transparent text-white border-2 font-bold text-base md:p-4 p-2  rounded-full'>Our Feedback</button>
            </div>
           
         </div>
