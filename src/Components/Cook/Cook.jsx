@@ -9,8 +9,8 @@ const Cook = ({cook}) => {
             {/* <td>{recipe_name}</td>
              <td>{preparing_time}</td>
             <td>{calories}</td> */}
-            <div className='flex   md:pr-4 items-center'>
-                <div className='flex  items-center md:gap-4 gap-2 pl-9 w-1/3 md:mr-5'>
+            <div className='flex   md:pr-4 pr-2 items-center'>
+                <div className='flex  items-center md:gap-4 gap-2 md:pl-9 pl-5 w-1/3 md:mr-5 mr-3'>
                     <p>{recipe_id}</p>
                 <p>{recipe_name}</p>
                 </div>
@@ -18,7 +18,7 @@ const Cook = ({cook}) => {
              <p>{preparing_time} min</p>
                 <p className='mr-5'>{calories}</p>
           </div>
-          <button className='bg-[#0BE58A] rounded-3xl text-black md:text-base text-sm font-semibold border-2 border-[#0BE58A] md:p-2 p-1 md:px-3'>Preparing</button>
+          <button className='bg-[#0BE58A] rounded-3xl text-black md:text-base text-sm font-semibold border-2 border-[#0BE58A]  md:p-2 p-1 md:px-3'>Preparing</button>
                 </div>
           
             {/* <ol className='flex justify-between px-16 '>
