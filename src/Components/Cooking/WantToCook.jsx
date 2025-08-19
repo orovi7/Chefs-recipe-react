@@ -3,7 +3,7 @@ import Cook from '../Cook/Cook';
 
 const WantToCook = ({cooking}) => {
     return (
-        <div className='w-1/3 border-2 border-[#28282833] rounded-lg'>
+        <div className='md:w-1/3 border-2 border-[#28282833] rounded-lg'>
             <div className='my-5 pb-3 border-b-2'>
                 <h2 className='text-center font-bold text-2xl'>Want to Cook : {cooking.length}</h2>
             </div>
@@ -28,7 +28,7 @@ const WantToCook = ({cooking}) => {
             </table>  */}
 
             <div>
-               <div  className='md:flex justify-start gap-12 mb-3 px-16'>
+               <div  className='flex justify-start gap-12 mb-3 px-16'>
                  <div><p>Name</p></div>
                 <div><p>Time</p></div>
                 <div><p>Calories</p></div>

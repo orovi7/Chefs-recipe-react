@@ -9,8 +9,8 @@ const Cook = ({cook}) => {
             {/* <td>{recipe_name}</td>
              <td>{preparing_time}</td>
             <td>{calories}</td> */}
-            <div className='md:flex   pr-4  items-center'>
-                <div className='md:flex  items-center gap-4 pl-9 w-1/3 mr-5'>
+            <div className='flex   pr-4  items-center'>
+                <div className='flex  items-center gap-4 pl-9 w-1/3 mr-5'>
                     <p>{recipe_id}</p>
                 <p>{recipe_name}</p>
                 </div>

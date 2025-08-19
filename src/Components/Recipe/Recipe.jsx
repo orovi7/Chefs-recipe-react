@@ -25,7 +25,7 @@ const Recipe = ({recipe,  handleWantToCook}) => {
             <span className='flex items-center gap-1'><FaFire /> {calories}</span>
           </div>
 
-          <button onClick={() => handleWantToCook(recipe)} className='bg-[#0BE58A] rounded-3xl text-black
+          <button  onClick={() => handleWantToCook(recipe)} className='bg-[#0BE58A] rounded-3xl text-black
            font-semibold border-2 border-[#0BE58A]
            flex justify-start p-2 px-3'>Want to cook</button>
             
