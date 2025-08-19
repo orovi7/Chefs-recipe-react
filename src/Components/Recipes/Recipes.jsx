@@ -1,31 +1,64 @@
-import React, { useEffect, useState } from 'react';
-import Recipe from '../Recipe/Recipe';
+import React, { useEffect, useState } from "react";
+import Recipe from "../Recipe/Recipe";
+import WantToCook from "../Cooking/WantToCook";
+import { ToastContainer, toast } from "react-toastify";
+import CurrentCooking from "../CurrentCooking/CurrentCooking";
 
-const Recipes = ({ handleWantToCook,}) => {
-            
-    // declare state and useEffect to load data
-    const [recipes, setRecipes] = useState([]);
+const Recipes = ({ click }) => {
+  const notify = () => toast("already added this item !");
 
-    useEffect(() => {
-         fetch('recipes.json')
-         .then(res => res.json())
-         .then(data => setRecipes(data));
-    }, [])
-         
+  // declare state and useEffect to load data
+  const [recipes, setRecipes] = useState([]);
+  const [cook, setCook] = useState([]);
+  const [cooking, setCooking] = useState([]);
+  //   const [click, setClick] = useState([]);
+  const [currentCooking, setCurrentCooking] = useState([]);
 
-    return (
-       
-           <div className='grid md:grid-cols-2 grid-cols-1 md:w-2/3  gap-5'>
-             {
-                recipes.map(recipe => <Recipe   handleWantToCook={ handleWantToCook} recipe={recipe}></Recipe>)
-            }
-           </div>
-                
-            
-         
+  useEffect(() => {
+    fetch("recipes.json")
+      .then((res) => res.json())
+      .then((data) => setRecipes(data));
+  }, []);
 
-       
+  const handleWantToCook = (recipe) => {
+    // console.log(recipe);
+    const newCooking = [...cooking, recipe];
+    setCooking(newCooking);
+    // setClick(...click, recipe.recipe_id);
+    // setClick([...click, recipe.recipe_id]);
+
+    for (const cooking of cook) {
+      if (cooking.recipe_id === recipe.recipe_id) {
+        console.log("already added");
+        notify();
+        return;
+      }
+    }
+    setCook([...cook, recipe]);
+  };
+  const handleCurrentCooking = (recipe) => {
+    setCurrentCooking([...currentCooking, recipe]);
+    const remaining = cook.filter(
+      (recip) => recip.recipe_id !== recipe.recipe_id
     );
+    setCook(remaining);
+  };
+
+  return (
+    <div className="md:flex mt-10 gap-7 px-9">
+      <div className="grid md:grid-cols-2 grid-cols-1 md:w-2/3  gap-5">
+        {recipes.map((recipe) => (
+          <Recipe handleWantToCook={handleWantToCook} recipe={recipe}></Recipe>
+        ))}
+      </div>
+      <div>
+        <ToastContainer />
+        <WantToCook handleCurrentCooking={handleCurrentCooking} cook={cook}></WantToCook>
+        <CurrentCooking currentCooking ={currentCooking}></CurrentCooking>
+       
+      </div>
+    </div>
+  );
 };
 
 export default Recipes;

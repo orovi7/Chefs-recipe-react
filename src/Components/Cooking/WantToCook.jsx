@@ -1,11 +1,11 @@
 import React from 'react';
 import Cook from '../Cook/Cook';
 
-const WantToCook = ({cooking}) => {
+const WantToCook = ({ cook, handleCurrentCooking}) => {
     return (
-        <div className='md:w-1/3 border-2 border-[#28282833] rounded-lg'>
+        <div className=' border-2 border-[#28282833] mb-6 rounded-lg'>
             <div className='my-5 pb-3 border-b-2'>
-                <h2 className='text-center font-bold text-2xl'>Want to Cook : {cooking.length}</h2>
+                <h2 className='text-center font-bold text-2xl'>Want to Cook : {cook.length}</h2>
             </div>
             {/* <table className='ml-20 items-center '>
                 <tr className=''>
@@ -36,7 +36,7 @@ const WantToCook = ({cooking}) => {
                {/* second part */}
                <div>
                     {
-                        cooking.map(cook => <Cook cook={cook}></Cook>)
+                        cook.map(cook => <Cook handleCurrentCooking={handleCurrentCooking} cook={cook}></Cook>)
                     }
                    
                </div>

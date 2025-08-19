@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IoTimeOutline } from "react-icons/io5";
 import { FaFire } from "react-icons/fa";
 
 const Recipe = ({recipe,  handleWantToCook}) => {
+
+  
     // console.log(recipe)
     const {recipe_image, recipe_id, recipe_name, short_description, ingredients, preparing_time, calories} = recipe;
     return (
@@ -25,7 +27,7 @@ const Recipe = ({recipe,  handleWantToCook}) => {
             <span className='flex items-center gap-1'><FaFire /> {calories}</span>
           </div>
 
-          <button  onClick={() => handleWantToCook(recipe)} className='bg-[#0BE58A] rounded-3xl text-black
+          <button onClick={() => handleWantToCook(recipe)}  className='bg-[#0BE58A] rounded-3xl text-black
            font-semibold border-2 border-[#0BE58A]
            flex justify-start p-2 px-3'>Want to cook</button>
             

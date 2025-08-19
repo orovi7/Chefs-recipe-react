@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Cook = ({cook, handleCurrentCooking}) => {
-    const {recipe_name, recipe_id, preparing_time, calories} = cook;
-    // console.log(cook)
+const CurrentCook = ({curCook}) => {
+    const {recipe_name, recipe_id, preparing_time, calories} = curCook;
+    console.log(curCook);
     return (
-        <div className='bg-[#28282808] mb-3'>
+         <div className='bg-[#28282808] mb-3'>
+
             
             {/* <td>{recipe_name}</td>
              <td>{preparing_time}</td>
@@ -18,7 +19,7 @@ const Cook = ({cook, handleCurrentCooking}) => {
              <p>{preparing_time} min</p>
                 <p className='mr-5'>{calories}</p>
           </div>
-          <button onClick={() => handleCurrentCooking(cook)}  className='bg-[#0BE58A] rounded-3xl text-black md:text-base text-sm font-semibold border-2 border-[#0BE58A]  md:p-2 p-1 md:px-3'>Preparing</button>
+    
                 </div>
           
             {/* <ol className='flex justify-between px-16 '>
@@ -32,4 +33,4 @@ const Cook = ({cook, handleCurrentCooking}) => {
     );
 };
 
-export default Cook;
+export default CurrentCook;

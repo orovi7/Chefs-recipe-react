@@ -9,29 +9,34 @@ import OurRecipe from './Components/our-recipe/OurRecipe';
 import Recipes from './Components/Recipes/Recipes';
 
 function App() {
-  const [cooking, setCooking] = useState([]);
-  const [clickTime, setClickTime] = useState(0);
-  const [toast, setToast] = useState(false);
+  // const [cooking, setCooking] = useState([]);
+  // const [click, setClick] = useState([]);
 
-  const handleWantToCook = (recipe) => {
-    // console.log(recipe);
-    const newCooking = [...cooking, recipe]
-      setCooking(newCooking);
-      // setClicked([...clicked, value.recipe_id]) 
-  }
+  // const [clickTime, setClickTime] = useState(0);
+  // const [toast, setToast] = useState(false);
 
-  useEffect(() => {
-   if(clickTime > 1){
-   setToast(true);
-   const timer = setTimeout(() => setToast(false), 3000);
-   return () => clearTimeout(timer);
-   }
+//   const handleWantToCook = (recipe) => {
+//     // console.log(recipe);
+//     const newCooking = [...cooking, recipe]
+//       setCooking(newCooking);
+//       // setClick(...click, recipe.recipe_id);
+// setClick([...click, recipe.recipe_id]);
+    
+      
+//   }
 
-  }, [clickTime]);
+  // useEffect(() => {
+  //  if(clickTime > 1){
+  //  setToast(true);
+  //  const timer = setTimeout(() => setToast(false), 3000);
+  //  return () => clearTimeout(timer);
+  //  }
 
-  const handleToast = () => {
-    setClickTime(prev => prev +1);
-  }
+  // }, [clickTime]);
+
+  // const handleToast = () => {
+  //   setClickTime(prev => prev +1);
+  // }
  
 
   return (
@@ -39,9 +44,9 @@ function App() {
     <Nav></Nav>
     <Banner></Banner>
     <OurRecipe></OurRecipe>
-    <div className='md:flex mt-10 gap-7 px-9'>
-      <Recipes   handleWantToCook={ handleWantToCook}></Recipes>
-    <WantToCook cooking={cooking}></WantToCook>
+    <div className=''>
+      <Recipes  ></Recipes>
+    {/* <WantToCook  cooking={cooking}></WantToCook> */}
     </div>
 
       
