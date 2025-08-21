@@ -29,9 +29,9 @@ const WantToCook = ({ cook, handleCurrentCooking}) => {
 
             <div>
                <div  className='flex justify-start gap-12 mb-3 px-16'>
-                 <div><p>Name</p></div>
-                <div><p>Time</p></div>
-                <div><p>Calories</p></div>
+                 <div><p className='text-[#878787]'>Name</p></div>
+                <div><p className='text-[#878787]'>Time</p></div>
+                <div><p className='text-[#878787]'>Calories</p></div>
                </div>
                {/* second part */}
                <div>

@@ -12,7 +12,7 @@
       "2 cloves garlic",
       "3 red chilies"
     ],
-    "preparing_time": 30,
+    "preparing_time": "30",
     "calories": "320 calories"
   },
   {
@@ -28,7 +28,7 @@
       "2 cloves garlic",
       "Salt & pepper"
     ],
-    "preparing_time": 25,
+    "preparing_time": "25",
     "calories": "450 calories"
   },
   {
@@ -44,7 +44,7 @@
       "20 ml olive oil",
       "Lemon juice"
     ],
-    "preparing_time": 15,
+    "preparing_time": "15",
     "calories": "120 calories"
   },
   {
@@ -60,7 +60,7 @@
       "50 g curry paste",
       "Coriander leaves"
     ],
-    "preparing_time": 60,
+    "preparing_time": "60",
     "calories": "580 calories"
   },
   {
@@ -76,7 +76,7 @@
       "1 tsp baking powder",
       "Butter for frying"
     ],
-    "preparing_time": 20,
+    "preparing_time": "20",
     "calories": "350 calories"
   },
   {
@@ -92,7 +92,7 @@
       "Salt & pepper",
       "Fresh dill"
     ],
-    "preparing_time": 25,
+    "preparing_time": "25",
     "calories": "400 calories"
   }
 ]

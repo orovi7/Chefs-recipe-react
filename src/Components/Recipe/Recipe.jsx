@@ -14,17 +14,17 @@ const Recipe = ({recipe,  handleWantToCook}) => {
           {/* header here */}
           <div className='border-b-2 pb-5 mb-2'>
             <h3 className=' text-start text-lg font-semibold'>{recipe_name}</h3>
-            <p className='text-start text-sm text-[#150B2B99]'>{short_description}</p>
+            <p className='text-start text-sm text-[#150B2B99] mt-3'>{short_description}</p>
           </div>
           <div className='text-start border-b-2 pb-3'>
             <p className='text-base font-semibold'>Ingredients : {ingredients.length}</p>
             { 
-                ingredients.map(ingred => <span><li className='ml-5'>{ingred}</li></span>)
+                ingredients.map(ingred => <span><li className='ml-5 text-[#878787]'>{ingred}</li></span>)
             }
           </div>
           <div className='flex justify-between mt-5 mb-5'>
-            <span className='flex items-center gap-1'><IoTimeOutline /> {preparing_time} minutes</span>
-            <span className='flex items-center gap-1'><FaFire /> {calories}</span>
+            <span className='flex items-center gap-1 text-[#878787]'><IoTimeOutline /> {preparing_time} minutes</span>
+            <span className='flex items-center gap-1 text-[#878787]'><FaFire /> {calories}</span>
           </div>
 
           <button onClick={() => handleWantToCook(recipe)}  className='bg-[#0BE58A] rounded-3xl text-black

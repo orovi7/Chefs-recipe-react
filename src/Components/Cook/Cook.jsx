@@ -12,13 +12,15 @@ const Cook = ({cook, handleCurrentCooking}) => {
             <div className='flex   md:pr-4 pr-2 items-center'>
                 <div className='flex  items-center md:gap-4 gap-2 md:pl-9 pl-5 w-1/3 md:mr-5 mr-3'>
                     <p>{recipe_id}</p>
-                <p>{recipe_name}</p>
+                <p className='text-[#878787]'>{recipe_name}</p>
                 </div>
                 <div className='flex md:gap-10 gap-3'>
-             <p>{preparing_time} min</p>
-                <p className='mr-5'>{calories}</p>
+             <p className='text-[#878787]'>{preparing_time} min</p>
+                <p className='mr-5 text-[#878787]'>{calories}</p>
           </div>
-          <button onClick={() => handleCurrentCooking(cook)}  className='bg-[#0BE58A] rounded-3xl text-black md:text-base text-sm font-semibold border-2 border-[#0BE58A]  md:p-2 p-1 md:px-3'>Preparing</button>
+          <button onClick={() => handleCurrentCooking(cook, preparing_time, calories)} 
+           className='bg-[#0BE58A] rounded-3xl text-black md:text-base text-sm font-semibold border-2
+            border-[#0BE58A]  md:p-2 p-1 md:px-3'>Preparing</button>
                 </div>
           
             {/* <ol className='flex justify-between px-16 '>

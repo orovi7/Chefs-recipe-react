@@ -11,6 +11,8 @@ const Recipes = ({ click }) => {
   const [recipes, setRecipes] = useState([]);
   const [cook, setCook] = useState([]);
   const [cooking, setCooking] = useState([]);
+  const [time, setTime] = useState(0);
+  const [calorie, setCalorie] = useState(0);
   //   const [click, setClick] = useState([]);
   const [currentCooking, setCurrentCooking] = useState([]);
 
@@ -36,12 +38,19 @@ const Recipes = ({ click }) => {
     }
     setCook([...cook, recipe]);
   };
-  const handleCurrentCooking = (recipe) => {
+  const handleCurrentCooking = (recipe, preparing_time, calories) => {
     setCurrentCooking([...currentCooking, recipe]);
     const remaining = cook.filter(
       (recip) => recip.recipe_id !== recipe.recipe_id
     );
     setCook(remaining);
+   const newTime = time + parseInt(preparing_time);
+   setTime(newTime);
+   const newCalorie = calorie + parseInt(calories);
+   setCalorie(newCalorie);
+   console.log(time);
+
+
   };
 
   return (
@@ -54,7 +63,7 @@ const Recipes = ({ click }) => {
       <div>
         <ToastContainer />
         <WantToCook handleCurrentCooking={handleCurrentCooking} cook={cook}></WantToCook>
-        <CurrentCooking currentCooking ={currentCooking}></CurrentCooking>
+        <CurrentCooking time={time} calorie={calorie}  currentCooking ={currentCooking}></CurrentCooking>
        
       </div>
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const CurrentCook = ({curCook}) => {
     const {recipe_name, recipe_id, preparing_time, calories} = curCook;
-    console.log(curCook);
+    // console.log(curCook);
     return (
          <div className='bg-[#28282808] mb-3'>
 
@@ -13,13 +13,13 @@ const CurrentCook = ({curCook}) => {
             <div className='flex   md:pr-4 pr-2 items-center'>
                 <div className='flex  items-center md:gap-4 gap-2 md:pl-9 pl-5 w-1/3 md:mr-5 mr-3'>
                     <p>{recipe_id}</p>
-                <p>{recipe_name}</p>
+                <p className='text-[#878787]'>{recipe_name}</p>
                 </div>
                 <div className='flex md:gap-10 gap-3'>
-             <p>{preparing_time} min</p>
-                <p className='mr-5'>{calories}</p>
+             <p className='text-[#878787]'>{preparing_time} min</p>
+                <p className='mr-5 text-[#878787]'>{calories}</p>
           </div>
-    
+           
                 </div>
           
             {/* <ol className='flex justify-between px-16 '>
@@ -27,6 +27,8 @@ const CurrentCook = ({curCook}) => {
                 <li>{preparing_time}</li>
                 <li>{calories}</li>
             </ol> */}
+
+            
           
            
         </div>
