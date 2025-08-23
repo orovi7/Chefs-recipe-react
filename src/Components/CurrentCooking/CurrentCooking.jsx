@@ -25,7 +25,7 @@ const CurrentCooking = ({currentCooking, time, calorie}) => {
         {/* second part */}
         <div>
          {
-            currentCooking.map(curCook => <CurrentCook curCook ={curCook}></CurrentCook>)
+            currentCooking.map((curCook, idx) => <CurrentCook idx={idx + 1} curCook ={curCook}></CurrentCook>)
          }
         </div>
         {/* total section */}

@@ -1,8 +1,13 @@
 import React from 'react';
 
-const Cook = ({cook, handleCurrentCooking}) => {
+const Cook = ({cook,handleCurrentCooking, idx}) => {
     const {recipe_name, recipe_id, preparing_time, calories} = cook;
     // console.log(cook)
+    // handle want to cook counting
+        // const [click, setClick] = useState(0);
+         // want to cook counting here
+    // const newSET = click + 1;
+    // setClick(newSET);
     return (
         <div className='bg-[#28282808] mb-3'>
             
@@ -11,14 +16,14 @@ const Cook = ({cook, handleCurrentCooking}) => {
             <td>{calories}</td> */}
             <div className='flex   md:pr-4 pr-2 items-center'>
                 <div className='flex  items-center md:gap-4 gap-2 md:pl-9 pl-5 w-1/3 md:mr-5 mr-3'>
-                    <p>{recipe_id}</p>
+                    <p>{idx}</p>
                 <p className='text-[#878787]'>{recipe_name}</p>
                 </div>
                 <div className='flex md:gap-10 gap-3'>
              <p className='text-[#878787]'>{preparing_time} min</p>
                 <p className='mr-5 text-[#878787]'>{calories}</p>
           </div>
-          <button onClick={() => handleCurrentCooking(cook, preparing_time, calories)} 
+          <button onClick={() => handleCurrentCooking(cook, preparing_time, calories, recipe_id)} 
            className='bg-[#0BE58A] rounded-3xl text-black md:text-base text-sm font-semibold border-2
             border-[#0BE58A]  md:p-2 p-1 md:px-3'>Preparing</button>
                 </div>

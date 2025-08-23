@@ -4,7 +4,7 @@ import WantToCook from "../Cooking/WantToCook";
 import { ToastContainer, toast } from "react-toastify";
 import CurrentCooking from "../CurrentCooking/CurrentCooking";
 
-const Recipes = ({ click }) => {
+const Recipes = () => {
   const notify = () => toast("already added this item !");
 
   // declare state and useEffect to load data
@@ -13,7 +13,8 @@ const Recipes = ({ click }) => {
   const [cooking, setCooking] = useState([]);
   const [time, setTime] = useState(0);
   const [calorie, setCalorie] = useState(0);
-  //   const [click, setClick] = useState([]);
+  // handle want to cook counting
+    // const [click, setClick] = useState(0);
   const [currentCooking, setCurrentCooking] = useState([]);
 
   useEffect(() => {
@@ -27,7 +28,9 @@ const Recipes = ({ click }) => {
     const newCooking = [...cooking, recipe];
     setCooking(newCooking);
     // setClick(...click, recipe.recipe_id);
-    // setClick([...click, recipe.recipe_id]);
+    // want to cook counting here
+    // const newSET = (click + 1);
+    // setClick(newSET);
 
     for (const cooking of cook) {
       if (cooking.recipe_id === recipe.recipe_id) {
@@ -62,7 +65,7 @@ const Recipes = ({ click }) => {
       </div>
       <div>
         <ToastContainer />
-        <WantToCook handleCurrentCooking={handleCurrentCooking} cook={cook}></WantToCook>
+        <WantToCook   handleCurrentCooking={handleCurrentCooking} cook={cook}></WantToCook>
         <CurrentCooking time={time} calorie={calorie}  currentCooking ={currentCooking}></CurrentCooking>
        
       </div>

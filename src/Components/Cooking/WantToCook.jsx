@@ -1,7 +1,7 @@
 import React from 'react';
 import Cook from '../Cook/Cook';
 
-const WantToCook = ({ cook, handleCurrentCooking}) => {
+const WantToCook = ({ cook,   handleCurrentCooking}) => {
     return (
         <div className=' border-2 border-[#28282833] mb-6 rounded-lg'>
             <div className='my-5 pb-3 border-b-2'>
@@ -36,7 +36,7 @@ const WantToCook = ({ cook, handleCurrentCooking}) => {
                {/* second part */}
                <div>
                     {
-                        cook.map(cook => <Cook handleCurrentCooking={handleCurrentCooking} cook={cook}></Cook>)
+                        cook.map((cook, idx) => <Cook idx={idx + 1}  handleCurrentCooking={handleCurrentCooking} cook={cook}></Cook>)
                     }
                    
                </div>

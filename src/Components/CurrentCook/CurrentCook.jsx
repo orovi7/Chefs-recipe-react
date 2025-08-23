@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CurrentCook = ({curCook}) => {
+const CurrentCook = ({curCook, idx}) => {
     const {recipe_name, recipe_id, preparing_time, calories} = curCook;
     // console.log(curCook);
     return (
@@ -12,7 +12,7 @@ const CurrentCook = ({curCook}) => {
             <td>{calories}</td> */}
             <div className='flex   md:pr-4 pr-2 items-center'>
                 <div className='flex  items-center md:gap-4 gap-2 md:pl-9 pl-5 w-1/3 md:mr-5 mr-3'>
-                    <p>{recipe_id}</p>
+                    <p>{idx}</p>
                 <p className='text-[#878787]'>{recipe_name}</p>
                 </div>
                 <div className='flex md:gap-10 gap-3'>

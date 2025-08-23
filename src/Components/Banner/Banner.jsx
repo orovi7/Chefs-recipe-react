@@ -10,7 +10,7 @@ const Banner = () => {
            <div className='text-center  items-center pt-36 flex-row justify-center'>
         
              <h1 className='md:text-5xl text-2xl font-bold text-white leading-tight'>Discover an exceptional cooking <br />  class tailored for you!</h1>
-          <p className='text-white md:text-base text-sm pt-4 pb-5'>Learn and Master Basic Programming, Data Structures, Algorithm, OOP,
+          <p className='text-white md:text-base text-sm pt-4 md:px-0 px-5 pb-5'>Learn and Master Basic Programming, Data Structures, Algorithm, OOP,
              Database and solve 500+ coding <br /> problems to become an exceptionally well world-class Programmer.</p>
          
            </div>
